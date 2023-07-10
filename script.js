@@ -1,5 +1,5 @@
 //1-Crear una función que reciba un número por parámetro e indique en consola si el número es par o impar.
-function verificarParidad(numero) {
+function verificarParidad() {
   let numero = Number(document.getElementById("numero").value);
   let resultado = document.getElementById("resultado");
   if (numero % 2 === 0) {
@@ -10,9 +10,9 @@ function verificarParidad(numero) {
 }
 
 //2-Crear una función que reciba dos números por parámetro e indique en consola que número es mayor, y si ninguno lo es, indicar por consola que son iguales.
-function compararNumeros(num1, num2) {
-  let num1 = document.getElementById("num1").value;
-  let num2 = document.getElementById("num2").value;
+function compararNumeros() {
+  let num1 = Number(document.getElementById("num1").value);
+  let num2 = Number(document.getElementById("num2").value);
   if (num1 > num2) {
     console.log(num1 + " es mayor que " + num2);
   } else if (num1 < num2) {
