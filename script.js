@@ -1,7 +1,7 @@
 //1-Crear una función que reciba un número por parámetro e indique en consola si el número es par o impar.
 function verificarParidad(numero) {
-  var numero = Number(document.getElementById("numero").value);
-  var resultado = document.getElementById("resultado");
+  let numero = Number(document.getElementById("numero").value);
+  let resultado = document.getElementById("resultado");
   if (numero % 2 === 0) {
     console.log("El número " + numero + " es par.");
   } else {
@@ -11,8 +11,8 @@ function verificarParidad(numero) {
 
 //2-Crear una función que reciba dos números por parámetro e indique en consola que número es mayor, y si ninguno lo es, indicar por consola que son iguales.
 function compararNumeros(num1, num2) {
-  var num1 = document.getElementById("num1").value;
-  var num2 = document.getElementById("num2").value;
+  let num1 = document.getElementById("num1").value;
+  let num2 = document.getElementById("num2").value;
   if (num1 > num2) {
     console.log(num1 + " es mayor que " + num2);
   } else if (num1 < num2) {
@@ -41,11 +41,14 @@ const imprimirNumeros = (numero) => {
 
 //5 - Crear una función que reciba una palabra y un número por parámetro e imprima por consola  esa palabra la cantidad correspondiente al número indicado.
 
-function imprimirPalabra(palabra, cantidad) {
-  for (var i = 0; i < cantidad; i++) {
-    console.log(palabra);
+let palabra = "Voltedge";
+let cantidad = 5;
+
+const imprimirPalabra = (a, b) => {
+  for (let i = 0; i < b; i++) {
+    console.log(a);
   }
-}
+};
 
 //6 - Crear una función que reciba un array por parámetro e imprima por consola todos los valores de ese array.
 let miArray = [1, 2, 3, 4, 5];
