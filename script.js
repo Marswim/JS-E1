@@ -25,10 +25,15 @@ function compararNumeros() {
 //3-Crear una función que reciba un número por parámetro e indique en consola si ese número es múltiplo de 5.
 function multiplo5(number1) {
   if (number1 % 5 === 0) {
-    console.log(number1 + "es multipo de 5");
+    console.log(number1 + " es multipo de 5");
   } else {
-    console.log(number1 + "No es multiplo de 5");
+    console.log(number1 + " No es multiplo de 5");
   }
+}
+function checkNumber() {
+  var number1 = document.getElementById("number1").value;
+  var result = multiplo5(number1);
+  document.getElementById("result").innerText = result;
 }
 
 //4-Crear una función que reciba un número por parámetro e imprima por consola todos los números desde el 0 hasta llegar a ese número.
@@ -41,19 +46,20 @@ const imprimirNumeros = (numero) => {
 
 //5 - Crear una función que reciba una palabra y un número por parámetro e imprima por consola  esa palabra la cantidad correspondiente al número indicado.
 
-let palabra = "Voltedge";
-let cantidad = 5;
-
-const imprimirPalabra = (a, b) => {
-  for (let i = 0; i < b; i++) {
-    console.log(a);
+function imprimirPalabra(palabra, cantidad) {
+  var palabra = document.getElementById("palabra").value;
+  var cantidad = parseInt(document.getElementById("cantidad").value);
+  for (let i = 0; i < cantidad; i++) {
+    console.log(palabra);
   }
-};
+}
 
 //6 - Crear una función que reciba un array por parámetro e imprima por consola todos los valores de ese array.
-let miArray = [1, 2, 3, 4, 5];
+const miArray = [1, 2, 3, 4, 5];
 
 function imprimirArray(miArray) {
+  var arrayStr = document.getElementById("array").value;
+  var miArray = arrayStr.split(",");
   for (let i = 0; i < miArray.length; i++) {
     console.log(miArray[i]);
   }
@@ -64,7 +70,7 @@ let Array10 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function imprimirArrayExceptoQuinto(arr) {
   for (let i = 0; i < arr.length; i++) {
-    if (i !== 4) {
+    if (i !== 5) {
       console.log(arr[i]);
     }
   }

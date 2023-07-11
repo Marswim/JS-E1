@@ -14,6 +14,8 @@
       <p id="resultado"></p>
     </div>
     <br />
+    <hr />
+    <br />
     <div class="Comparativa">
       <h2>Compartativa Numerica</h2>
       <input id="num1" type="number" placeholder="Introduce el primer número" />
@@ -23,6 +25,65 @@
         placeholder="Introduce el segundo número"
       />
       <button onclick="compararNumeros()">Comparar</button>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <div class="verficador-multiplo5">
+      <h2>Verificar si un número es múltiplo de 5</h2>
+      <input type="number" id="number1" placeholder="Ingrese un número" />
+      <button onclick="checkNumber()">Verificar</button>
+      <p id="result"></p>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <div class="Impresion-numeros">
+      <h2>Impresion de numeros hasta el numero indicado</h2>
+      <input type="number" id="numero" placeholder="Ingrese un número" />
+      <button onclick="imprimirNumeros()">Imprimir Números</button>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <div>
+      <h2>Impresion de una palabra segun el numero que indique</h2>
+      <label for="palabra">Palabra:</label>
+      <input type="text" id="palabra" />
+
+      <label for="cantidad">Cantidad:</label>
+      <input type="number" id="cantidad" />
+
+      <button onclick="imprimirPalabra()">Imprimir</button>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <div>
+      <h2>Array que muestre todos los valores</h2>
+      <label for="array">Array:</label>
+      <input type="text" id="array" />
+      <button onclick="imprimirArray()">Imprimir</button>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <div>
+      <h2>Ipmpresion de array sin el 5</h2>
+      <input
+        type="number"
+        id="inputValue"
+        placeholder="Ingrese un número entre 1 y 10"
+      />
+      <button onclick="imprimirArrayExceptoQuinto()">Imprimir</button>
+    </div>
+    <div>
+      <h2>Multiplicar Array por Numero</h2>
+      <label for="numero">Ingrese un número:</label>
+      <input type="number" id="numero" />
+      <button onclick="multiplearraynumber()">
+        Multiplicar Array por Número
+      </button>
     </div>
 
     <script src="script.js"></script>
